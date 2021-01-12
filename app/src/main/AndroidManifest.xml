@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="james.my.mridulsirtasks">
 
     <application
@@ -9,11 +10,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MridulSirTasks">
-        <activity android:name=".ExplicitIntentActivity"></activity>
-        <activity android:name=".ImplicitIntentActivity">
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".ElevanjanuaryTask" />
+        <activity
+            android:name=".FragmentSecondActivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".FragmentFirstActivity"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".FragmentMainActivity">
 
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".ExplicitIntentActivity" />
+        <activity android:name=".ImplicitIntentActivity" />
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,5 +31,7 @@
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
